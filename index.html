@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 NFT Auction</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.6.1/ethers.umd.min.js"></script>
+</head>
+<body>
+    <h1>Web3 NFT Auction</h1>
+    
+    <button onclick="connectWallet()">Connect to MetaMask</button>
+    <p id="account">Not connected</p>
+    <p id="balance">Balance: 0 ETH</p>
+
+    <h2>Place a Bid</h2>
+    <input type="number" id="bidAmount" placeholder="Amount in ETH">
+    <button onclick="placeBid()">Bid</button>
+
+    <h2>Check Gas Estimate</h2>
+    <button onclick="estimateGas()">Estimate Gas for Bidding</button>
+    <p id="gasEstimate">Gas Estimate: </p>
+
+    <script src="app.js"></script>
+</body>
+</html>
